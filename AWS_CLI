@@ -1,0 +1,8 @@
+Create topic
+ $ aws sns create-topic --name "my-demo-sns-topic"{"TopicArn": "arn:aws:sns:us-west-2:1234556667:my-demo-sns-topic"}
+
+Subscribe to topic
+ $ aws sns subscribe --topic-arn arn:aws:sns:us-west-2:123456667:my-demo-sns-topic --protocol email --notification-endpoint test@gmail.com{"SubscriptionArn": "pending confirmation"}
+
+Publish topic
+$ aws sns publish --topic-arn arn:aws:sns:us-west-2:1234567:my-demo-sns-topic --message "hello from sns"{"MessageId": "d651b7d5-2d66-58c8-abe4-e30822a3aa3e"}
